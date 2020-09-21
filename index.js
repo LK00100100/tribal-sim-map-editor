@@ -3,11 +3,12 @@ let fs = require("fs");
 let PNG = require("pngjs").PNG;
 let pixelToTerrain = require("./Terrain.js").pixelToTerrain;
 
-//let targetFileInput = "img/sample-world.png";
-//let targetFileOutput = "output/sample-world.json";
+let mapName = "sample-world-partial";
+let targetFileInput = `img/${mapName}.png`;
+let targetFileOutput = `output/${mapName}.json`;
 
-let targetFileInput = "img/sample.png";
-let targetFileOutput = "output/sample.json";
+// let targetFileInput = "img/sample.png";
+// let targetFileOutput = "output/sample.json";
 
 //TODO: electron app
 //TODO: convert pixel to terrain
@@ -47,6 +48,10 @@ function processImage() {
     jsonStr = "[" + listRows.join(",") + "]";
 
     fs.writeFile(targetFileOutput, jsonStr, function (err, result) {
-        if (err) console.log('error', err);
+        if (err)
+            console.log('error', err);
+        else
+            console.log("file written");
     });
+
 };
