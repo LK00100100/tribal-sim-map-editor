@@ -1,0 +1,22 @@
+{
+  "name": "tribal-sim-map-editor",
+  "version": "1.0.0",
+  "description": "Map Editor for Tribal Simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LK00100100/tribal-sim-map-editor.git"
+  },
+  "author": "lk00100100",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LK00100100/tribal-sim-map-editor/issues"
+  },
+  "homepage": "https://github.com/LK00100100/tribal-sim-map-editor#readme",
+  "dependencies": {
+    "pngjs": "^5.0.0"
+  }
+}
